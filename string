@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext())
+        {
+            String str = sc.next();
+            StringBuffer t = new StringBuffer();
+            for (int i = 0; i < str.length(); i++) 
+            {
+                char m = str.charAt(i);
+                if(!t.toString().contains(m + ""))
+                {
+                    t.append(m);
+                }
+            }
+            System.out.println(t);
+        }
+    }
+}
